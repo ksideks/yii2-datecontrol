@@ -366,9 +366,9 @@ class DateControl extends InputWidget
             $this->saveTimezone = $this->_module->getSaveTimezone();
         }
         // skip timezone validations when using date only inputs
-        if ($this->type === self::FORMAT_DATE) {
-            $this->displayTimezone = $this->saveTimezone = null;
-        }
+        //if ($this->type === self::FORMAT_DATE) {
+        //    $this->displayTimezone = $this->saveTimezone = null;
+        //}
         if ($this->autoWidget) {
             $this->_widgetSettings = [
                 self::FORMAT_DATE => ['class' => '\kartik\date\DatePicker'],
